@@ -183,7 +183,7 @@ To run this project locally, follow these steps:
    ```
 2. Navigate to the project folder:
    ```bash
-   cd book-barter-system
+   cd Codepath-Bookbarter
    ```
 3. Open the `index.html` file in your browser.
 
