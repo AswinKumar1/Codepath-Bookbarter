@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="codepath.png" alt="Codepath.org">
+</p>
+
 # Book Barter System
 
 Welcome to the **Book Barter System** web app! This project was created as part of CodePath's Web Development course. It allows users to exchange books anonymously while promoting environmental sustainability. Users can sign a petition, view information about the platform, toggle dark mode, and interact with various features that make the system fun and engaging.
