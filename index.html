@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Barter System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="book_icon.png"> <!-- Stretch feature: Tab icon -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Book Barter</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+            </ul>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Book Barter</h2>
+        <p>Exchange books anonymously with avid readers and save trees.</p>
+        <img src="books.jpg" alt="Books" class="styled-image"> 
+        <img src="book-stack.jpg" alt="More Books" class="styled-image"> 
+        <div class="button-container">
+            <button class="btn">Join Now</button>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Sign up, check out available books, and order in exchange for an old book. Contribute $5 for environmental causes.</p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Why Books are So Fun?</h2>
+        <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/AUw7laSlcbo" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </section>
+
+
+    <!-- Petition Form and Signatures Section -->
+    <section id="petition">
+        <div class="petition-container">
+            
+            <!-- Call to Action Section -->
+            <div class="cta">
+                <p>If you also think reading shouldn't be costly, go ahead and sign up!</p>
+            </div>
+    
+            <div class="form-section">
+                <h2>Sign Our Petition</h2>
+                <form id="petition-form">
+                    <div class="form-field">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" id="sign-now">Sign Now</button>
+                    <p class="error-message" id="error-message">Please fill in all fields.</p>
+                </form>
+            </div>
+    
+            <div class="signatures-section">
+                <h2>Petition Signatures</h2>
+                <ul id="signature-list">
+                    
+                </ul>
+                <p id="signature-count">Total Signatures: 0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Thank you for signing!</h2>
+            <p id="modal-message"></p>
+            <img id="modal-image" src="thank-you.jpg" alt="Thank You" class="modal-image">
+            <button id="close-modal" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Reduce Motion Button -->
+    <button id="reduce-motion-btn" class="btn">Reduce Motion</button>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Book Barter System. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com">LinkedIn</a>
+                <a href="https://github.com">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

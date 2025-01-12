@@ -1,0 +1,371 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f5f5dc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.reduce-motion * {
+    transition: none !important;
+    animation: none !important;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4f4f4f;
+}
+
+/* Section Styling */
+section {
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    will-change: opacity;
+}
+
+section.visible {
+    opacity: 1;
+}
+
+/* Header and Navbar using Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b4513;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar button {
+    background-color: #4b0082;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #3a0066;
+}
+
+/* Buttons styling */
+.btn {
+    background-color: #6b8e23;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #556b2f;
+}
+
+/* Image styling */
+.styled-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.styled-image:hover {
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+}
+
+/* Petition Container Styling */
+.petition-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.form-section, .signatures-section, .cta {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-section {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2, .signatures-section h2 {
+    margin-top: 0;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-field input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.highlight-invalid {
+    border-color: red;
+}
+
+#sign-now {
+    width: 100%;
+    background-color: #6b8e23;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sign-now:hover {
+    background-color: #556b2f;
+}
+
+.signatures-section {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#signature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#signature-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#signature-count {
+    font-weight: bold;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Iframe Video */
+iframe {
+    border: 2px solid #d2691e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 100%;
+    display: block;
+    align-items: stretch;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;  /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Space out the content */
+    align-items: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content img {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.modal-content img:hover {
+    transform: scale(1.1);
+}
+
+.close-btn {
+    background-color: #6b8e23;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;  /* Add margin to separate the button from content */
+}
+
+.close-btn:hover {
+    background-color: #556b2f;
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer with fixed positioning */
+footer {
+    background-color: #054242;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #ffcc00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Responsive header using flexbox */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .petition-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-section, .signatures-section {
+        max-width: 100%;
+    }
+
+    #questions-shoutouts {
+        padding: 20px 10px;
+    }
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
